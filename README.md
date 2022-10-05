@@ -17,7 +17,7 @@
 - Created a new conda environment named 'computer_vision'.
 - Installed pip and used it to install the relevant packages needed for the project (opencv-python, tensorflow-macos, ipykernel).
 - Created a test.py file with the following code to check that the keras model worked correctly using a numpy array.
-
+```
     from keras.models import load_model
     import cv2
     import numpy as np
@@ -44,3 +44,4 @@
     cap.release()
         # Destroy all the windows
     cv2.destroyAllWindows()
+```
