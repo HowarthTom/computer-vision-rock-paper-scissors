@@ -44,14 +44,12 @@ while True:
 cap.release()
 # Destroy all the windows
 cv2.destroyAllWindows()
-
 ```
 ## Milestone 4
 
 - Created a manual-rps.py file to simulate a game without the use of the keras model.
 - Added a computer_choice and user_choice method to the RPS class.
 ```python
-
 import random
 
 class RPS:
@@ -75,5 +73,17 @@ def play_game():
 
 if __name__ == '__main__':
     play_game()
-    
+```
+- Adds a get_winner method to determine a winner and update the score.
+```python
+def get_winner(self, computer_choice, user_choice):
+        if computer_choice == user_choice:
+            self.winner = "Noone"
+        elif [computer_choice, user_choice] in [["Rock", "paper"], ["Paper", "Scissors"], ["Scissors", "Rock"]]:
+            self.winner = "User"
+            self.user_score += 1
+        else:
+            self.winner = "Computer"
+            self.computer_score +=1
+        return self.winner
 ```
