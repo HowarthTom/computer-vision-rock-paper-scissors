@@ -1,6 +1,14 @@
 # Computer vision project (Rock, Paper, Scissors)
 
 > Teachable machine 
+- Created a keras model to detect video user input of either Rock, Paper, or Scissors.
+
+> Manual RPS
+- Created the code to run a game of rock, paper, scissors, using manual user input.
+
+> Camera RPS
+- Replaced the code for the maanual user input with code that utilised the keras model with videocapture input.
+- Added a display to the webcam to improve user-friendliness 
 
 ## Milestone 1
 
